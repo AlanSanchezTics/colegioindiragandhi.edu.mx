@@ -1,5 +1,5 @@
 <?php
-        $my_email = "admin@ciaigandhi.com";
+        $my_email = "info@indiragandhi.edu.mx";
         $continue = "/";
         $errors = array();
         if(count($_COOKIE)){
