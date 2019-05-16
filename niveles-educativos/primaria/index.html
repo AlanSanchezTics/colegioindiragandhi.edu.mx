@@ -13,6 +13,18 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="/introfade.css">
     <title>Primaria | Colegio Indira Gandhi</title>
+    <style>
+        .dropdown:hover>.dropdown-menu {
+            flex-direction: column;
+            display: block;
+        }
+        @media(min-width:576px) {
+            .dropdown-sm:hover>.dropdown-menu-sm {
+                flex-direction: row;
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -37,41 +49,41 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">INICIO</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown dropdown-sm">
                     <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         NOSOTROS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="/conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
                         <a class="dropdown-item" href="/conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
                         <a class="dropdown-item" href="/conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown dropdown-sm">
                     <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         NIVELES EDUCATIVOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown2">
                         <a class="dropdown-item" href="/niveles-educativos/prekinder/">PREKINDER</a>
                         <a class="dropdown-item" href="/niveles-educativos/preescolar/">PREESCOLAR</a>
                         <a class="dropdown-item" href="/niveles-educativos/primaria/">PRIMARIA</a>
                         <a class="dropdown-item" href="/niveles-educativos/secundaria/">SECUNDARIA</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown dropdown-sm">
                     <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         INTERESADOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                    <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown3">
                         <a class="dropdown-item" href="/aspirantes/proceso/">PROCESO</a>
                         <a class="dropdown-item" href="/aspirantes/requisitos/">DOCUMENTACION</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown dropdown-sm">
                     <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         GALERIA <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu dropdown-toggle" aria-labelledby="navbarDropdown4">
+                    <div class="dropdown-menu dropdown-menu-sm dropdown-toggle" aria-labelledby="navbarDropdown4">
                         <a class="dropdown-item" href="/galeria/eventos/">EVENTOS</a>
                         <a class="dropdown-item" href="/galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
                     </div>
