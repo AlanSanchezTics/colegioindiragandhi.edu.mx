@@ -3,94 +3,120 @@
 
 <head>
     <!-- Required meta tags -->
-    <link rel="shortcut icon" type="image/x-icon" href="/frontend/imgs/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../frontend/imgs/icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="/introfade.css">
+    <link rel="stylesheet" href="../../introfade.css">
     <title>Nuestro equipo de trabajo | Colegio Indira Gandhi</title>
     <style>
         .dropdown:hover>.dropdown-menu {
             flex-direction: column;
             display: block;
         }
+
         @media(min-width:576px) {
             .dropdown-sm:hover>.dropdown-menu-sm {
                 flex-direction: row;
                 display: flex;
             }
         }
+        .img-01 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            background-position: 50% 33%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(15px);
+            filter: blur(15px);
+        }
+        .card{
+            border: none;
+        }
     </style>
 </head>
 
-<body>
-    <header class="d-flex bd-highlight" style="background-color: #2B59B4">
+<body class="m-0 p-0" style="background-color: #e9ebee">
+    <header class="d-flex bd-highlight px-1 py-1 px-sm-5 py-sm-3" style="background-color: #2B59B4">
         <div class="p-2 w-100 bd-highlight fadeintro">
-            <a class="navbar-brand" href="/">
-                <img src="/frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio"
-                />
+            <a class="navbar-brand" href="../../">
+                <img src="../../frontend/imgs/logoTitle4.png" class="img-fluid" width="400"
+                    alt="Logotipo del colegio" />
             </a>
         </div>
         <div class="p-2 flex-shrink-1 bd-highlight align-self-center">
-            <a href="#" style="text-decoration: none; color: #FFFFFF; font-size: 14px; font-weight: bold;">ENGLISH</a>
+            <a href="#">
+                <img src="../../frontend/imgs/us.png" width="32" alt="English version" title="English version" />
+            </a>
         </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFD417">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto container d-flex flex-md-column flex-lg-row justify-content-lg-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">INICIO</a>
+                    <a class="nav-link" href="../../">INICIO</a>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         NOSOTROS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="/conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
-                        <a class="dropdown-item" href="/conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
-                        <a class="dropdown-item" href="/conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
+                        <a class="dropdown-item" href="../../conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
+                        <a class="dropdown-item" href="../../conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
+                        <a class="dropdown-item" href="../../conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         NIVELES EDUCATIVOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="/niveles-educativos/prekinder/">PREKINDER</a>
-                        <a class="dropdown-item" href="/niveles-educativos/preescolar/">PREESCOLAR</a>
-                        <a class="dropdown-item" href="/niveles-educativos/primaria/">PRIMARIA</a>
-                        <a class="dropdown-item" href="/niveles-educativos/secundaria/">SECUNDARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/preescolar/">PREESCOLAR</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/primaria/">PRIMARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/secundaria/">SECUNDARIA</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         INTERESADOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="/aspirantes/proceso/">PROCESO</a>
-                        <a class="dropdown-item" href="/aspirantes/requisitos/">DOCUMENTACION</a>
+                        <a class="dropdown-item" href="../../aspirantes/proceso/">PROCESO</a>
+                        <a class="dropdown-item" href="../../aspirantes/requisitos/">DOCUMENTACION</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         GALERIA <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm dropdown-toggle" aria-labelledby="navbarDropdown4">
-                        <a class="dropdown-item" href="/galeria/eventos/">EVENTOS</a>
-                        <a class="dropdown-item" href="/galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
+                        <a class="dropdown-item" href="../../galeria/eventos/">EVENTOS</a>
+                        <a class="dropdown-item" href="../../galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacto/">CONTACTO</a>
+                    <a class="nav-link" href="../../contacto/">CONTACTO</a>
                 </li>
             </ul>
     </nav>
@@ -102,12 +128,36 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0">
-            <div style="width: 100%; height: 350px; background-image: url(/frontend/imgs/equipo.jpg); background-position: center center;background-size: cover;background-repeat: no-repeat;"></div>
+        <div class="row p-0 m-0">
+            <div class="card d-sm-none d-block">
+                <img src="../../frontend/imgs/equipo.jpg"  class="card-img" alt="...">
+                <div class="card-img-overlay px-5 " style="background-color: rgba(228, 225, 225, 0.67)">
+                    <p class="card-text text-justify" style="font-weight: 600;"> Contamos con un excelente equipo de trabajo, profesionales de la educación que se distingue por su gran
+                            compromiso, deseo
+                            de superación, gran calidez humana, creativos y responsables.</p>
+                </div>
+            </div>
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-sm-block d-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-01 w-100 d-block" style="background-image: url('../../frontend/imgs/equipo.jpg')"></div>
+                        <div class="row">
+                            <div class="col align-self-end" >
+                                    <img src="../../frontend/imgs/equipo.jpg" width="500" class="m-5" alt="..." style="position: relative;">
+                            </div>
+                            <div class="col px-5 align-self-center">
+                                <p class="text-white h3">Contamos con las docentes mas capacitadas para impartir una educación personalizada y de calidad a nuestros niños.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class=" row m-0 text-center py-3" style="background-color: #2B59B4">
-            <cite class="mt-0 pt-0 h5 text-white">
-                Contamos con un excelente equipo de trabajo, profesionales de la educación que se distingue por su gran compromiso, deseo
+        <div class=" row m-0 text-center py-3 d-sm-block d-none" style="background-color: #2B59B4">
+            <cite class="mt-0 pt-0 text-white px-sm-3 px-1" style="font-size: 1.2rem;">
+                Contamos con un excelente equipo de trabajo, profesionales de la educación que se distingue por su gran
+                compromiso, deseo
                 de superación, gran calidez humana, creativos y responsables.
             </cite>
         </div>
@@ -119,17 +169,37 @@
                 <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
             </div>
         </div>
-        <div class="row m-0 pt-3 px-5">
-            <h3>Nuestra filosofia</h3>
-            <p class="text-justify" style="font-weight:500;">Nuestra filosofia se basa en ofrecer a nuestra comunidad escolar oportunidades para que aprendan a experimentar,
-                comprendan causas y consecuencias, exploren posibilidades de solución a un problema, acepten responsabilidades,
-                trabajen en equipo, soliciten ayuda, acepten críticas y reconozcan los logros de otros, confirmando que cuando
-                tratamos a las demás personas como queremos ser tratados, todas las puertas y oportunidades se abren a nuestro
-                favor.</p>
+        <div class="row m-0 p-0 mx-lg-5 px-lg-5">
+            <div class="col m-0 p-0 mx-lg-5 px-lg-5">
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <h3>Nuestra filosofia</h3>
+                            <p class="text-justify" >Nuestra filosofia se basa en ofrecer a nuestra
+                                comunidad escolar oportunidades para que aprendan a experimentar,
+                                comprendan causas y consecuencias, exploren posibilidades de solución a un problema, acepten
+                                responsabilidades,
+                                trabajen en equipo, soliciten ayuda, acepten críticas y reconozcan los logros de otros,
+                                confirmando que cuando
+                                tratamos a las demás personas como queremos ser tratados, todas las puertas y oportunidades se
+                                abren a nuestro
+                                favor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mt-3">
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+            </div>
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
+            </div>
         </div>
         <div class="row m-0 p-0 mt-3 mb-3">
             <div class="col align-items-center text-center">
-                <a href="/contacto/" class="btn btn-success text-white">Conocenos...</a>
+                <a href="../../contacto/" class="btn btn-success text-white">Conocenos...</a>
             </div>
         </div>
         <!--Contenido-->
@@ -142,20 +212,21 @@
                         <span class="h5">Enlaces relacionados</span>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="http://www.gob.mx/sep" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                        class="fa">&#xf0da;</i> SEP</a>
+                                <a href="http://www.gob.mx/sep" style="color:#FFFFFF" target="_blank"><i
+                                        style="font-size:16px" class="fa">&#xf0da;</i> SEP</a>
                             </li>
                             <li>
-                                <a href="http://portalsej.jalisco.gob.mx//" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                        class="fa">&#xf0da;</i> Educación Jalisco</a>
+                                <a href="http://portalsej.jalisco.gob.mx//" style="color:#FFFFFF" target="_blank"><i
+                                        style="font-size:16px" class="fa">&#xf0da;</i> Educación Jalisco</a>
                             </li>
                             <li>
-                                <a href="#" style="color:#FFFFFF" target="_blank"><i style="font-size:16px" class="fa">&#xf0da;</i>
+                                <a href="#" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
+                                        class="fa">&#xf0da;</i>
                                     CIAIGapp</a>
                             </li>
                             <li>
-                                <a href="https://www.ciaigandhi.com/" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                        class="fa">&#xf0da;</i> CIAIG</a>
+                                <a href="https://www.ciaigandhi.com/" style="color:#FFFFFF" target="_blank"><i
+                                        style="font-size:16px" class="fa">&#xf0da;</i> CIAIG</a>
                             </li>
                         </ul>
                     </div>
@@ -164,22 +235,24 @@
             <div class="col align-items-center">
                 <div class="d-flex align-items-center flex-column bd-highlight mb-3">
                     <div class="mb-auto p-2 bd-highlight">
-                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="/frontend/imgs/facebook.svg"
-                                width="32" /></a>
+                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img
+                                src="../../frontend/imgs/facebook.svg" width="32" /></a>
                     </div>
                     <div class="p-0 bd-highlight text-center">
-                        <a class="text-center" style="color: #FFFFFF" href="mailto:info@indiragandhi.edu.mx">info@indiragandhi.edu.mx</a>
+                        <a class="text-center" style="color: #FFFFFF"
+                            href="mailto:info@indiragandhi.edu.mx">info@indiragandhi.edu.mx</a>
                     </div>
                     <div class="p-0 bd-highlight text-center">
                         <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto Vallarta</span>
                     </div>
                     <div class="p-0 bd-highlight text-center">
-                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 216 6571</span>
+                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
                     </div>
                     <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
                         <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br> Río
                         Guayaquil #505, Col. Lázaro Cárdenas | Puerto Vallarta, Jalisco | C.P. 48330<br>
-                        <a style="color: #FFFFFF" href="https://www.google.com/maps/dir//Colegio+Indira+Gandhi,+R%C3%ADo+Guayaquil,+L%C3%A1zaro+C%C3%A1rdenas,+Puerto+Vallarta,+Jalisco/@20.6233435,-105.2612991,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8421455deefb204b:0x45ad1e56f146c518!2m2!1d-105.2262794!2d20.623347"><i
+                        <a style="color: #FFFFFF"
+                            href="https://www.google.com/maps/dir//Colegio+Indira+Gandhi,+R%C3%ADo+Guayaquil,+L%C3%A1zaro+C%C3%A1rdenas,+Puerto+Vallarta,+Jalisco/@20.6233435,-105.2612991,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8421455deefb204b:0x45ad1e56f146c518!2m2!1d-105.2262794!2d20.623347"><i
                                 class="fa fa-location-arrow" style="color:#FFFFFF; font-size: 16px"></i> Como llegar</a>
                     </div>
                 </div>
@@ -187,15 +260,16 @@
             <div class="col align-items-center m-3">
                 <div class="d-flex align-items-center flex-column bd-highlight mb-3">
                     <div class=" mb-auto p-0 text-center bd-highlight">
-                        <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu Dispositivo</span>
+                        <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu
+                            Dispositivo</span>
                     </div>
                     <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="/frontend/imgs/app-store-icon.png"
-                                class="img-fluid" width="200" /></a>
+                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img
+                                src="../../frontend/imgs/app-store-icon.png" class="img-fluid" width="200" /></a>
                     </div>
                     <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="/frontend/imgs/play-store-icon.png"
-                                class="img-fluid" width="200" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img
+                                src="../../frontend/imgs/play-store-icon.png" class="img-fluid" width="200" /></a>
                     </div>
                 </div>
             </div>
@@ -214,11 +288,14 @@
             <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <!-- Required meta tags -->
-    <link rel="shortcut icon" type="image/x-icon" href="/frontend/imgs/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../frontend/imgs/icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="/introfade.css">
+    <link rel="stylesheet" href="../../introfade.css">
     <title>Secundaria | Colegio Indira Gandhi</title>
     <style>
         .dropdown:hover>.dropdown-menu {
@@ -24,18 +24,49 @@
                 display: flex;
             }
         }
+        .img-01 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            background-position: 50% 33%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(15px);
+            filter: blur(15px);
+        }
+        .img-02{
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            background-position: 50% 33%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .card{
+            border: none;
+        }
     </style>
 </head>
 
-<body>
-    <header class="d-flex bd-highlight" style="background-color: #2B59B4">
+<body class="m-0 p-0" style="background-color: #e9ebee">
+    <header class="d-flex bd-highlight px-1 py-1 px-sm-5 py-sm-3" style="background-color: #2B59B4">
         <div class="p-2 w-100 bd-highlight fadeintro">
-            <a class="navbar-brand" href="/">
-                <img src="/frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio" />
+            <a class="navbar-brand" href="../../">
+                <img src="../../frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio" />
             </a>
         </div>
         <div class="p-2 flex-shrink-1 bd-highlight align-self-center">
-            <a href="#" style="text-decoration: none; color: #FFFFFF; font-size: 14px; font-weight: bold;">ENGLISH</a>
+            <a href="#">
+                <img src="../../frontend/imgs/us.png" width="32" alt="English version" title="English version" />
+            </a>
         </div>
         </div>
     </header>
@@ -47,16 +78,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto container d-flex flex-md-column flex-lg-row justify-content-lg-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">INICIO</a>
+                    <a class="nav-link" href="../../">INICIO</a>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
                     <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         NOSOTROS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="/conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
-                        <a class="dropdown-item" href="/conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
-                        <a class="dropdown-item" href="/conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
+                        <a class="dropdown-item" href="../../conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
+                        <a class="dropdown-item" href="../../conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
+                        <a class="dropdown-item" href="../../conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
@@ -64,10 +95,9 @@
                         NIVELES EDUCATIVOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="/niveles-educativos/prekinder/">PREKINDER</a>
-                        <a class="dropdown-item" href="/niveles-educativos/preescolar/">PREESCOLAR</a>
-                        <a class="dropdown-item" href="/niveles-educativos/primaria/">PRIMARIA</a>
-                        <a class="dropdown-item" href="/niveles-educativos/secundaria/">SECUNDARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/preescolar/">PREESCOLAR</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/primaria/">PRIMARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/secundaria/">SECUNDARIA</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
@@ -75,8 +105,8 @@
                         INTERESADOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="/aspirantes/proceso/">PROCESO</a>
-                        <a class="dropdown-item" href="/aspirantes/requisitos/">DOCUMENTACION</a>
+                        <a class="dropdown-item" href="../../aspirantes/proceso/">PROCESO</a>
+                        <a class="dropdown-item" href="../../aspirantes/requisitos/">DOCUMENTACION</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
@@ -84,12 +114,12 @@
                         GALERIA <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm dropdown-toggle" aria-labelledby="navbarDropdown4">
-                        <a class="dropdown-item" href="/galeria/eventos/">EVENTOS</a>
-                        <a class="dropdown-item" href="/galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
+                        <a class="dropdown-item" href="../../galeria/eventos/">EVENTOS</a>
+                        <a class="dropdown-item" href="../../galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacto/">CONTACTO</a>
+                    <a class="nav-link" href="../../contacto/">CONTACTO</a>
                 </li>
             </ul>
     </nav>
@@ -101,11 +131,34 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0">
-            <div style="width: 100%; height: 350px; background-image: url('/frontend/imgs/primaria/image1.jpg'); background-position: center center;background-size: cover;background-repeat: no-repeat;"></div>
+        <div class="row p-0 m-0">
+            <div class="card d-sm-none d-block">
+                <img src="../../frontend/imgs/nivel_secundaria.jpg"  class="card-img" alt="...">
+                <div class="card-img-overlay px-5 " style="background-color: rgba(228, 225, 225, 0.67)">
+                    <p class="card-text text-justify" style="font-weight: 600;"> Como institución educativa de prestigio, trabajamos apegado al plan de estudios de la SEP (Secretaría de Educación Pública)
+                            de acuerdo a la Reforma Educativa que nos rige hasta el momento y siempre atentos a las actualizaciones de
+                            la misma.</p>
+                </div>
+            </div>
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-sm-block d-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-01 w-100 d-block" style="background-image: url('../../frontend/imgs/nivel_secundaria.jpg')"></div>
+                        <div class="row">
+                            <div class="col align-self-end" >
+                                    <img src="../../frontend/imgs/nivel_secundaria.jpg" width="400" class="m-5" alt="..." style="position: relative;">
+                            </div>
+                            <div class="col px-5 align-self-center">
+                                <p class="text-white h3">Nuestro proposito es que cada miembro de nuestra comunidad escolar desarrolle su liderazgo descubriendo su mayor potencial de aprendizaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class=" row m-0 text-center py-3" style="background-color: #2B59B4">
-            <cite class="mt-0 pt-0 h5 text-white">
+        <div class=" row m-0 text-center py-3 d-sm-block d-none" style="background-color: #2B59B4">
+            <cite class="mt-0 pt-0 text-white px-sm-3 px-1" style="font-size: 1.2rem;">
                 Como institución educativa de prestigio, trabajamos apegado al plan de estudios de la SEP (Secretaría de Educación Pública)
                 de acuerdo a la Reforma Educativa que nos rige hasta el momento y siempre atentos a las actualizaciones de
                 la misma.
@@ -119,42 +172,160 @@
                 <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
             </div>
         </div>
-        <div class="row m-0 pt-3 px-5">
-            <p class="text-justify" style="font-weight:500;">Parte de nuestro trabajo es complementar el aprendizaje del
-                alumno, por eso utilizamos materiales adicionales como:</p>
-            <ul style="font-weight:500;">
-                <li>Metodología CIME en el cual se utiliza material concreto (regletas y geoplano) basándonos en matemáticas
-                    constructivas.</li>
-                <li>Guías de apoyo y plataformas interactivas (actualmente con Montenegro Editores) probablemente cambiemos
-                    de editorial para el próximo año escolar.</li>
-                <li>Somos un colegio Bilingüe. El material de Inglés con el que trabajamos hasta el momento es de la editorial
-                    Richmond la serie Thumbs UP!. </li>
-            </ul>
-            <p class="text-justify" style="font-weight:500;">Como parte de fomentar una sana convivencia entre alumnos, a
-                lo largo del ciclo escolar realizamos eventos como:</p>
-            <ul style="font-weight:500;">
-                <li>Expo Culturas: Exposiciones de Culturas del mundo en Inglés</li> 
-                <li>Exposición de Altar de Muertos</li>
-                <li>Expo Riqueza Cultural de México(Noche Mexicana) </li>
-                <li>Concurso Spelling Bee </li>
-                <li>Celebración de Thanksgiving</li>
-                <li>Viaje a FIL Guadalajara </li>
-                <li>Campaña "Regala una sonrisa"</li>
-                <li>Festival de canto (villancicos)</li>
-                <li>Posada de Alumnos </li>
-                <li>Proyecto Ecológico "Regalo a la Madre Tierra"</li>
-                <li>Semana Literaria</li>
-                <li>Semana de La Amistad</li>
-                <li>Festival del Talento Indira</li>
-                <li>Mini olimpiadas</li>
-                <li>Celebración del Día del Niño (albercada)</li>
-                <li>Día de la familia</li>
-            </ul>
-            <cite class="mt-4 pt-0 h5 text-center">Nuestra meta es fomentar a nuestros niños los valores primordiales para la sana convivencia entre sus compañeros y familia</cite>
+        <div class="row p-0 m-0 px-lg-5 mx-lg-5">
+            <div class="col p-0 m-0 px-lg-5 mx-lg-5">
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <div class="col p-0 m-0">
+                                <h3>Horarios</h3>
+                                <ul>
+                                    <li class="text-justify">Nuestro Horario de clases es de <b>7:45 am</b> a <b>3:00 pm</b>.</li>
+                                    <li>Recibimos a nuestros nños a partir de las <b>7:30 am</b>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <p class="text-justify" >Parte de nuestro trabajo es complementar el aprendizaje del
+                                alumno, por eso utilizamos materiales adicionales como:</p>
+                            <ul >
+                                <li>Bibliografía que se apega en su totalidad a las competencias que la sep marca; enriquecidas con materiales tecnológicos y actualizadas a las necesidades de los alumnos.</li>
+                                <li>Guías de apoyo y plataformas interactivas.</li>
+                                <li>Guías de apoyo y plataformas interactivas de Castillo Editores las cuales otorgan un usuario a cada alumno.</li>
+                                <li>Somos un colegio Bilingüe. El material de Inglés con el que trabajamos es de la editorial
+                                    Richmond. También cuenta con Plataforma Interactiva en donde los maestros dan un seguimiento constante del avance. Así mismo este material le permite al alumno que al concluir pueda buscar una Certificacion de Idioma Inglés.</li>
+                                <li>Realizamos reuiniones trimestrales para que conozcan el desarrollo academico de nuestros niños.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                        <div class="card-body">
+                            <div class="row m-0 pt-3 px-sm-5 px-1">
+                                <div class="col p-0 m-0">
+                                    <h3 class="p-0 m-0">Plan de estudios</h3>
+                                    <p>Impartimos materias de acuerdo al Programa de la Secretaria de Educación Publica (SEP), el cual siempre actualizamos de acuerdo al nivel y ciclo escolar.</p>
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-sm table-striped table-bordered">
+                                            <tbody>
+                                                <tr class="text-white" style="background-color:#2B59B4;">
+                                                    <th>1°</th>
+                                                    <th>2°</th>
+                                                    <th>3°</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Español</td>
+                                                    <td>Español</td>
+                                                    <td>Español</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ingles</td>
+                                                    <td>Ingles</td>
+                                                    <td>Ingles</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Matemáticas</td>
+                                                    <td>Matemáticas</td>
+                                                    <td>Matemáticas</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Formación Cívica y Ética</td>
+                                                    <td>Formación Cívica y Ética</td>
+                                                    <td>Formación Cívica y Ética</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Educación Física</td>
+                                                    <td>Educación Física</td>
+                                                    <td>Educación Física</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Artes</td>
+                                                    <td>Artes</td>
+                                                    <td>Artes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Geografía</td>
+                                                    <td>Geografía</td>
+                                                    <td>Geografía</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Historia</td>
+                                                    <td>Historia</td>
+                                                    <td>Historia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tecnologías</td>
+                                                    <td>tecnologías</td>
+                                                    <td>tecnologías</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Emocional</td>
+                                                    <td>Emocional</td>
+                                                    <td>Emocional</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Biologia</td>
+                                                    <td>Biologia</td>
+                                                    <td>Biologia</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <div class="col p-0 m-0">
+                                <h3>Actividades Complementarias</h3>
+                                <p class="text-justify" >Como parte de fomentar una sana convivencia entre alumnos, a
+                                lo largo del ciclo escolar realizamos eventos como:</p>
+                                <ul >
+                                        <li>Expo Bio-Robótica: Exposiciones de Maquetas Robóticas que ilustren el cuerpo humano. Esta exposición en es Inglés.</li>
+                                        <li>Exposición de Altar de Muertos</li>
+                                        <li>Expo Riqueza Cultural de México (Noche Mexicana)</li>
+                                        <li>Concurso Spelling Bee</li>
+                                        <li>Celebración de Thanksgiving</li>
+                                        <li>Viaje a FIL Guadalajara</li>
+                                        <li>Campaña "Regala una sonrisa"</li>
+                                        <li>Festival de canto (villancicos)</li>
+                                        <li>Posada de Alumnos</li>
+                                        <li>Proyecto Ecológico "Regalo a la Madre Tierra"</li>
+                                        <li>Semana Literaria</li>
+                                        <li>Semana de La Amistad</li>
+                                        <li>Festival del Talento Indira</li>
+                                        <li>Mini olimpiadas</li>
+                                        <li>Celebración del Día del Estudiante (Tardeada)</li>
+                                        <li>Fiesta de Mamá y Papá</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 mt-4 mx-sm-5 mx-3">
+                    <div class="col align-items-center">
+                        <p style="font-family: Monotype Corsiva;" class="text-center h5">"Nuestra meta es fomentar a nuestros niños los valores primordiales para la sana convivencia entre sus compañeros y familia."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mt-3">
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+            </div>
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
+            </div>
         </div>
         <div class="row m-0 p-0 mt-3 mb-3">
             <div class="col align-items-center text-center">
-                <a href="/contacto/" class="btn btn-success text-white">Conocenos...</a>
+                <a href="../../contacto/" class="btn btn-success text-white">Conocenos...</a>
             </div>
         </div>
         <!--Contenido-->
@@ -189,7 +360,7 @@
             <div class="col align-items-center">
                 <div class="d-flex align-items-center flex-column bd-highlight mb-3">
                     <div class="mb-auto p-2 bd-highlight">
-                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="/frontend/imgs/facebook.svg"
+                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="../../frontend/imgs/facebook.svg"
                                 width="32" /></a>
                     </div>
                     <div class="p-0 bd-highlight text-center">
@@ -199,7 +370,7 @@
                         <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto Vallarta</span>
                     </div>
                     <div class="p-0 bd-highlight text-center">
-                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 216 6571</span>
+                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
                     </div>
                     <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
                         <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br> Río
@@ -215,11 +386,11 @@
                         <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu Dispositivo</span>
                     </div>
                     <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="/frontend/imgs/app-store-icon.png"
+                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="../../frontend/imgs/app-store-icon.png"
                                 class="img-fluid" width="200" /></a>
                     </div>
                     <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="/frontend/imgs/play-store-icon.png"
+                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="../../frontend/imgs/play-store-icon.png"
                                 class="img-fluid" width="200" /></a>
                     </div>
                 </div>

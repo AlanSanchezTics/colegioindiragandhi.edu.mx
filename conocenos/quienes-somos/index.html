@@ -3,14 +3,14 @@
 
 <head>
     <!-- Required meta tags -->
-    <link rel="shortcut icon" type="image/x-icon" href="/frontend/imgs/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../frontend/imgs/icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="/introfade.css">
+    <link rel="stylesheet" href="../../introfade.css">
     <title>Conocenos un poco más | Colegio Indira Gandhi</title>
     <style>
         .dropdown:hover>.dropdown-menu {
@@ -23,19 +23,41 @@
                 display: flex;
             }
         }
+        .img-01 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            background-position: 50% 33%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(15px);
+            filter: blur(15px);
+        }
+        .card{
+            border: none;
+        }
     </style>
 </head>
 
-<body class="m-0 p-0">
-    <header class="d-flex bd-highlight" style="background-color: #2B59B4">
+<body class="m-0 p-0" style="background-color: #dcdee0">
+    <header class="d-flex bd-highlight px-1 py-1 px-sm-5 py-sm-3" style="background-color: #2B59B4">
         <div class="p-2 w-100 bd-highlight fadeintro">
-            <a class="navbar-brand" href="/">
-                <img src="/frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio"
+            <a class="navbar-brand" href="../../">
+                <img src="../../frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio"
                 />
             </a>
         </div>
         <div class="p-2 flex-shrink-1 bd-highlight align-self-center">
-            <a href="#" style="text-decoration: none; color: #FFFFFF; font-size: 14px; font-weight: bold;">ENGLISH</a>
+            <a href="#">
+                <img src="../../frontend/imgs/us.png" width="32" alt="English version" title="English version" />
+            </a>
         </div>
         </div>
     </header>
@@ -45,18 +67,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto container d-flex flex-md-column flex-lg-row justify-content-lg-between">
+            <ul class="navbar-nav mr-auto container d-flex flex-md-column flex-lg-row justify-content-lg-between ">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">INICIO</a>
+                    <a class="nav-link" href="../../">INICIO</a>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
                     <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         NOSOTROS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="/conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
-                        <a class="dropdown-item" href="/conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
-                        <a class="dropdown-item" href="/conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
+                        <a class="dropdown-item" href="../quienes-somos/">¿QUIENES SOMOS?</a>
+                        <a class="dropdown-item" href="../modelo-educativo/">MODELO EDUCATIVO</a>
+                        <a class="dropdown-item" href="../nuestro-equipo/">EQUIPO DE TRABAJO</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
@@ -64,10 +86,9 @@
                         NIVELES EDUCATIVOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="/niveles-educativos/prekinder/">PREKINDER</a>
-                        <a class="dropdown-item" href="/niveles-educativos/preescolar/">PREESCOLAR</a>
-                        <a class="dropdown-item" href="/niveles-educativos/primaria/">PRIMARIA</a>
-                        <a class="dropdown-item" href="/niveles-educativos/secundaria/">SECUNDARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/preescolar/">PREESCOLAR</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/primaria/">PRIMARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/secundaria/">SECUNDARIA</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
@@ -75,8 +96,8 @@
                         INTERESADOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="/aspirantes/proceso/">PROCESO</a>
-                        <a class="dropdown-item" href="/aspirantes/requisitos/">DOCUMENTACION</a>
+                        <a class="dropdown-item" href="../../aspirantes/proceso/">PROCESO</a>
+                        <a class="dropdown-item" href="../../aspirantes/requisitos/">DOCUMENTACION</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
@@ -84,12 +105,12 @@
                         GALERIA <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm dropdown-toggle" aria-labelledby="navbarDropdown4">
-                        <a class="dropdown-item" href="/galeria/eventos/">EVENTOS</a>
-                        <a class="dropdown-item" href="/galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
+                        <a class="dropdown-item" href="../../galeria/eventos/">EVENTOS</a>
+                        <a class="dropdown-item" href="../../galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacto/">CONTACTO</a>
+                    <a class="nav-link" href="../../contacto/">CONTACTO</a>
                 </li>
             </ul>
     </nav>
@@ -101,11 +122,33 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0">
-            <div style="width: 100%; height: 350px; background-image: url(/frontend/imgs/slide_2.jpg); background-position: center center;background-size: cover;background-repeat: no-repeat;"></div>
+        <div class="row p-0 m-0">
+            <div class="card d-sm-none d-block">
+                <img src="../../frontend/imgs/slide_1.jpg"  class="card-img" alt="...">
+                <div class="card-img-overlay px-5 " style="background-color: rgba(228, 225, 225, 0.67)">
+                    <p class="card-text text-justify" style="font-weight: 600;"> El colegio Indira Gandhi se formó en el año 2010 bajo la dirección general de Claudia Hernandez fundadora de este hermoso
+                            sueño siendo hoy un proyecto de transformación y calidad humana.</p>
+                </div>
+            </div>
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-sm-block d-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-01 w-100 d-block" style="background-image: url('../../frontend/imgs/slide_1.jpg')"></div>
+                        <div class="row">
+                            <div class="col align-self-end" >
+                                    <img src="../../frontend/imgs/slide_1.jpg" width="500" class="m-5" alt="..." style="position: relative;">
+                            </div>
+                            <div class="col px-5 align-self-center">
+                                <p class="text-white h3">Nuestro proposito es que cada miembro de nuestra comunidad escolar desarrolle su liderazgo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class=" row m-0 text-center py-3" style="background-color: #2B59B4">
-            <cite class="mt-0 pt-0 h5 text-white">
+        <div class=" row m-0 text-center py-3 d-sm-block d-none" style="background-color: #2B59B4">
+            <cite class="mt-0 pt-0 text-white px-sm-3 px-1" style="font-size: 1.2rem;">
                 El colegio Indira Gandhi se formó en el año 2010 bajo la dirección general de Claudia Hernandez fundadora de este hermoso
                 sueño siendo hoy un proyecto de transformación y calidad humana.
             </cite>
@@ -118,28 +161,60 @@
                 <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
             </div>
         </div>
-        <div class="row m-0 pt-3 px-5">
-            <p class="text-justify" style="font-weight:500;">El colegio Indira Gandhi es una institución educativa dedicada
-                a ofrecer una educación de calidad con el fortalecimiento de la práctica de los valores, donde se aplica
-                la regla de oro para lograr una sana convivencia entre los miembros de nuestra comunidad escolar, además
-                ofrece una educación bilingüe con el manejo del idioma inglés tan necesario para integrarse a la sociedad
-                del siglo XXI y el manejo adecuado de la tecnología, nuestro lema es: “Un buen principio para un futuro brillante”.
-            </p>
-            <h3>¿Qué es lo que nos inspira?</h3>
-            <p class="text-justify" style="font-weight:500;">La principal inspiración del colegio es ver personas libres,
-                autónomas e independientes, capaces de resolver cualquier problema al que se enfrenten que desarrollen sus
-                habilidades y capacidades al máximo para lograr siempre el cumplimiento de sus metas, es por eso que nos
-                dedicamos totalmente a nuestros alumnos, la familia y el personal que labora en nuestra institución.</p>
-            <h3>¿Que nos caracteriza?</h3>
-            <p class="text-justify" style="font-weight:500;">Las características que nos diferencian de otros colegios son
-                la calidez, el enfoque en el ser humano y la constante superación académica basada en el bienestar de nuestros
-                alumnos proporcionándoles una atención personalizada y de igual manera a los padres de familia.</p>
-            <cite class="mt-4 pt-0 h5 text-center">"El colegio Indira Gandhi mi segundo hogar, mi primera experiencia a la vida, donde todos somos únicos,
-                valiosos e irrepetibles y vivimos aventuras inolvidables."</cite>
+        <div class="row m-0 p-0 mx-lg-5 px-lg-5">
+            <div class="col m-0 p-0 mx-lg-5 px-lg-5">
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <p class="text-justify">El colegio Indira Gandhi es una institución educativa dedicada
+                                a ofrecer una educación de calidad con el fortalecimiento de la práctica de los valores, donde se aplica
+                                la regla de oro para lograr una sana convivencia entre los miembros de nuestra comunidad escolar, además
+                                ofrece una educación bilingüe con el manejo del idioma inglés tan necesario para integrarse a la sociedad
+                                del siglo XXI y el manejo adecuado de la tecnología, nuestro lema es: “Un buen principio para un futuro brillante”.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <h3>¿Qué es lo que nos inspira?</h3>
+                            <p class="text-justify">La principal inspiración del colegio es ver personas libres,
+                                autónomas e independientes, capaces de resolver cualquier problema al que se enfrenten que desarrollen sus
+                                habilidades y capacidades al máximo para lograr siempre el cumplimiento de sus metas, es por eso que nos
+                                dedicamos totalmente a nuestros alumnos, la familia y el personal que labora en nuestra institución.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                                <h3>¿Que nos caracteriza?</h3>
+                            <p class="text-justify">Las características que nos diferencian de otros colegios son
+                                la calidez, el enfoque en el ser humano y la constante superación académica basada en el bienestar de nuestros
+                                alumnos proporcionándoles una atención personalizada y de igual manera a los padres de familia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 mt-4 mx-sm-5 mx-3">
+                    <div class="col align-items-center">
+                        <p style="font-family: Monotype Corsiva;" class="text-center h5">"El colegio Indira Gandhi es mi segundo hogar, mi primera experiencia a la vida, donde todos somos únicos,
+                        valiosos e irrepetibles y vivimos aventuras inolvidables."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mt-3">
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+            </div>
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
+            </div>
         </div>
         <div class="row m-0 p-0 mt-3 mb-3">
             <div class="col align-items-center text-center">
-                <a href="/contacto/" class="btn btn-success text-white">Conocenos...</a>
+                <a href="../../contacto/" class="btn btn-success text-white">Conocenos...</a>
             </div>
         </div>
         <!--Contenido-->
@@ -174,7 +249,7 @@
             <div class="col align-items-center">
                 <div class="d-flex align-items-center flex-column bd-highlight mb-3">
                     <div class="mb-auto p-2 bd-highlight">
-                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="/frontend/imgs/facebook.svg"
+                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="../../frontend/imgs/facebook.svg"
                                 width="32" /></a>
                     </div>
                     <div class="p-0 bd-highlight text-center">
@@ -184,7 +259,7 @@
                         <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto Vallarta</span>
                     </div>
                     <div class="p-0 bd-highlight text-center">
-                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 216 6571</span>
+                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
                     </div>
                     <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
                         <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br> Río
@@ -200,11 +275,11 @@
                         <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu Dispositivo</span>
                     </div>
                     <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="/frontend/imgs/app-store-icon.png"
+                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="../../frontend/imgs/app-store-icon.png"
                                 class="img-fluid" width="200" /></a>
                     </div>
                     <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="/frontend/imgs/play-store-icon.png"
+                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="../../frontend/imgs/play-store-icon.png"
                                 class="img-fluid" width="200" /></a>
                     </div>
                 </div>
