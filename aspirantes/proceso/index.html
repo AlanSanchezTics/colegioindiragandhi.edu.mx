@@ -3,195 +3,162 @@
 
 <head>
     <!-- Required meta tags -->
-    <link rel="shortcut icon" type="image/x-icon" href="/frontend/imgs/icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../frontend/imgs/icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/introfade.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Proceso de inscripción | Colegio Indira Gandhi</title>
+    <link rel="stylesheet" href="../../introfade.css">
+    <title>Unete a nuestra comunidad | Colegio Indira Gandhi</title>
     <style>
-        .dropdown-menu {
+        .dropdown:hover>.dropdown-menu {
+            flex-direction: column;
+            display: block;
+        }
+
+        @media(min-width:576px) {
+            .dropdown-sm:hover>.dropdown-menu-sm {
+                flex-direction: row;
+                display: flex;
+            }
+        }
+
+        .img-01 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            background-position: 50% 33%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(15px);
+            filter: blur(15px);
+        }
+        a.btn-outline-primary {
+            color: #0E2344;
+            border-color: #0E2344;
+        }
+
+        a.btn-outline-primary:hover {
             background-color: #0E2344;
+            border-color: #0E2344;
         }
-
-        .dropdown-item {
-            color: #FFFFFF;
-        }
-
-        .dropdown-item:active {
-            background-color: rgba(255, 255, 255, 0.945);
-            ;
-            color: #212529;
-            background-clip: padding-box;
-        }
-
-        .nav-link {
-            font-weight: bold;
-            font-family: Arial;
+        .card {
+            border: none;
         }
     </style>
 </head>
 
-<body>
-    <header class="d-flex bd-highlight" style="background-color: #2B59B4">
+<body class="m-0 p-0" style="background-color: #e9ebee">
+    <header class="d-flex bd-highlight p-0 m-0 px-5" style="background-color: #2B59B4">
         <div class="p-2 w-100 bd-highlight fadeintro">
-            <a class="navbar-brand" href="/">
-                <img src="/frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio" />
+            <a class="navbar-brand" href="../../">
+                <img src="../../frontend/imgs/logoTitle4.png" class="img-fluid" width="300"
+                    alt="Logotipo del colegio" />
             </a>
         </div>
         <div class="p-2 flex-shrink-1 bd-highlight align-self-center">
-            <a href="#" style="text-decoration: none; color: #FFFFFF; font-size: 14px; font-weight: bold;">ENGLISH</a>
+            <a href="#">
+                <img src="../../frontend/imgs/us.png" width="32" alt="English version" title="English version" />
+            </a>
         </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFD417">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto container d-flex flex-md-column flex-lg-row justify-content-lg-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">INICIO</a>
+                    <a class="nav-link" href="../../">INICIO</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown dropdown-sm">
+                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         NOSOTROS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="/conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
-                        <a class="dropdown-item" href="/conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
-                        <a class="dropdown-item" href="/conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
+                    <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="../../conocenos/quienes-somos/">¿QUIENES SOMOS?</a>
+                        <a class="dropdown-item" href="../../conocenos/modelo-educativo/">MODELO EDUCATIVO</a>
+                        <a class="dropdown-item" href="../../conocenos/nuestro-equipo/">EQUIPO DE TRABAJO</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown dropdown-sm">
+                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         NIVELES EDUCATIVOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="/niveles-educativos/prekinder/">PREKINDER</a>
-                        <a class="dropdown-item" href="/niveles-educativos/preescolar/">PREESCOLAR</a>
-                        <a class="dropdown-item" href="/niveles-educativos/primaria/">PRIMARIA</a>
-                        <a class="dropdown-item" href="/niveles-educativos/secundaria/">SECUNDARIA</a>
+                    <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="../../niveles-educativos/preescolar/">PREESCOLAR</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/primaria/">PRIMARIA</a>
+                        <a class="dropdown-item" href="../../niveles-educativos/secundaria/">SECUNDARIA</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown dropdown-sm">
+                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         INTERESADOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="/aspirantes/proceso/">PROCESO</a>
-                        <a class="dropdown-item" href="/aspirantes/requisitos/">DOCUMENTACION</a>
+                    <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="../../aspirantes/proceso/">PROCESO</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown dropdown-sm">
+                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         GALERIA <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
-                    <div class="dropdown-menu dropdown-toggle" aria-labelledby="navbarDropdown4">
-                        <a class="dropdown-item" href="/galeria/eventos/">EVENTOS</a>
-                        <a class="dropdown-item" href="/galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
+                    <div class="dropdown-menu dropdown-menu-sm dropdown-toggle" aria-labelledby="navbarDropdown4">
+                        <a class="dropdown-item" href="../../galeria/eventos/">EVENTOS</a>
+                        <a class="dropdown-item" href="../../galeria/nuestra-casa/">NUESTRAS INSTALACIONES</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacto/">CONTACTO</a>
+                    <a class="nav-link" href="../../contacto/">CONTACTO</a>
                 </li>
             </ul>
     </nav>
-    <div class="container-fluid">
-        <div id="title-area" class="row" style="background-color: rgb(245, 245, 245)">
+    <div class="container-fluid p-0 m-0">
+        <div id="title-area" class="row m-0 p-0" style="background-color: rgb(245, 245, 245)">
             <div class="col mt-5 mb-3 text-center">
                 <div>
                     <span class="h1">Proceso de inscripción</span>
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0">
-                <div class="col m-0 p-0">
-                    <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
-                </div>
-                <div class="col m-0 p-0">
-                    <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
-                </div>
-            </div>
-        <!--Contenido-->
-    </div>
-    <footer class="footer mt-auto py-3 container-fluid" style="background-color: #0E2344">
-            <div class="row">
-                <div class="col align-items-center m-3 ml-5 ml-sm-3">
-                    <div class="d-flex align-items-start flex-column bd-highlight" style="color:#FFFFFF">
-                        <div class="p-0 bd-highlight">
-                            <span class="h5">Enlaces relacionados</span>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="http://www.gob.mx/sep" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                            class="fa">&#xf0da;</i> SEP</a>
-                                </li>
-                                <li>
-                                    <a href="http://portalsej.jalisco.gob.mx//" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                            class="fa">&#xf0da;</i> Educación Jalisco</a>
-                                </li>
-                                <li>
-                                    <a href="#" style="color:#FFFFFF" target="_blank"><i style="font-size:16px" class="fa">&#xf0da;</i>
-                                        CIAIGapp</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.ciaigandhi.com/" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                            class="fa">&#xf0da;</i> CIAIG</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col align-items-center">
-                    <div class="d-flex align-items-center flex-column bd-highlight mb-3">
-                        <div class="mb-auto p-2 bd-highlight">
-                            <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="/frontend/imgs/facebook.svg"
-                                    width="32" /></a>
-                        </div>
-                        <div class="p-0 bd-highlight text-center">
-                            <a class="text-center" style="color: #FFFFFF" href="mailto:info@indiragandhi.edu.mx">info@indiragandhi.edu.mx</a>
-                        </div>
-                        <div class="p-0 bd-highlight text-center">
-                            <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto Vallarta</span>
-                        </div>
-                        <div class="p-0 bd-highlight text-center">
-                            <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
-                        </div>
-                        <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
-                            <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br> Río
-                            Guayaquil #505, Col. Lázaro Cárdenas | Puerto Vallarta, Jalisco | C.P. 48330<br>
-                            <a style="color: #FFFFFF" href="https://www.google.com/maps/dir//Colegio+Indira+Gandhi,+R%C3%ADo+Guayaquil,+L%C3%A1zaro+C%C3%A1rdenas,+Puerto+Vallarta,+Jalisco/@20.6233435,-105.2612991,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8421455deefb204b:0x45ad1e56f146c518!2m2!1d-105.2262794!2d20.623347"><i
-                                    class="fa fa-location-arrow" style="color:#FFFFFF; font-size: 16px"></i> Como llegar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col align-items-center m-3">
-                    <div class="d-flex align-items-center flex-column bd-highlight mb-3">
-                        <div class=" mb-auto p-0 text-center bd-highlight">
-                            <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu Dispositivo</span>
-                        </div>
-                        <div class="mb-auto p-0 bd-highlight">
-                            <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="/frontend/imgs/app-store-icon.png"
-                                    class="img-fluid" width="200" /></a>
-                        </div>
-                        <div class="mb-auto p-0 bd-highlight">
-                            <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="/frontend/imgs/play-store-icon.png"
-                                    class="img-fluid" width="200" /></a>
+        <div class="row p-0 m-0">
+            <div id="carouselXL" class="carousel slide w-100 d-sm-block d-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-01 w-100 d-block"
+                            style="background-image: url('../../frontend/imgs/slide_4.jpg')"></div>
+                        <div class="row">
+                            <div class="col align-self-end">
+                                <img src="../../frontend/imgs/slide_4.jpg" width="500" class="m-5" alt="..."
+                                    style="position: relative;">
+                            </div>
+                            <div class="col px-5 align-self-center">
+                                <p class="text-white h3">El colegio Indira Gandhi es una institución educativa dedicada
+                                    a ofrecer una educación de calidad con el fortalecimiento de la práctica de los
+                                    valores. Unete a esta gran familia que juntos hemos formado.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col text-center">
-                    <font face="Arial" size="1" color="#FFFFFF">Sitio diseñado por Alan Sanchez</font>
-                </div>
-            </div>
-        </footer>
-    <div class="row m-0 p-0">
+        </div>
+        <div class="row m-0 p-0 mt-5">
             <div class="col m-0 p-0">
                 <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
             </div>
@@ -199,11 +166,268 @@
                 <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
             </div>
         </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        <div class="row m-0 p-0 mx-lg-5 px-lg-5">
+            <div class="col m-0 p-0 mx-lg-5 px-lg-5">
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <div class="col">
+                                <h3>Documentación necesaria</h3>
+                                <ul>
+                                    <li>Acta de nacimiento (Original y copia).</li>
+                                    <li>Certificado de estudios del ciclo anterior (Original y copia).</li>
+                                    <li>2 Fotografias tamaño infantil a color.</li>
+                                    <li>CURP en formato actulizado (Original y copia).</li>
+                                    <li>Copia de cartilla de vacunación.</li>
+                                    <li>Copia de crendencial de elector de mamá y papá.</li>
+                                    <li>Copia de crendencial de elector de las personas autorizadas para recoger al
+                                        niño.</li>
+                                    <li>Comprobante de domicilio (Original y copia).</li>
+                                    <li>Carta de no adeudo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mx-lg-5 px-lg-5">
+            <div class="col m-0 p-0 mx-lg-5 px-lg-5">
+                <div class="card my-2 mx-sm-5 mx-3" style="background-color: #FFFFFF">
+                    <div class="card-body">
+                        <div class="row m-0 pt-3 px-sm-5 px-1">
+                            <div class="col">
+                                <h3>Nuestros servicios</h3>
+                                <ul>
+                                    <li>Contamos con una excelente ubicación.</li>
+                                    <li>Grupos reducidos de hasta 20 Alumnos.</li>
+                                    <li>Seguro escolar (CMQ premier).</li>
+                                    <li>Servicio de Alimentos.</li>
+                                    <li>Eventos sociales y culturales.</li>
+                                    <li>Escuela para padres.</li>
+                                    <li>Asesorias en psicología.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col align-items-center text-center p-0 m-0">
+                <h3 class="">Nuestras cuotas de inscripción</h3>
+                <hr width="20%" color="grey">
+                <div class="row row px-3 py-3 m-0">
+                    <div class="col">
+                        <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
+                            <div class="card-body " >
+                                <h5 class="card-title">Prekinder</h5>
+                                <hr width="30%" color="grey">
+                                <p>Nuestra meta es fomentar a nuestros niños los valores primordiales para la sana
+                                    convivencia entre sus compañeros y familia.</p>
+                                <ul style="text-align: start;">
+                                    <li>Inscripción: $1,800.00</li>
+                                    <li>Mensualidad: $2,000.00</li>
+                                    <li>Seguro escolar: $300.00</li>
+                                    <li>Eventos: $400.00</li>
+                                </ul>
+                                <a href="../../niveles-educativos/preescolar/"
+                                    class="btn btn-outline-primary rounded-pill px-5 ">Conoce
+                                    mas...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
+                            <div class="card-body " >
+                                <h5 class="card-title">Preescolar</h5>
+                                <hr width="30%" color="grey">
+                                <p>El colegio Indira Gandhi en su nivel preescolar ofrece una atención individualizada
+                                    al ser grupos no mayor a 20 alumnos por salón de clases.</p>
+                                    <ul style="text-align: start;">
+                                        <li>Inscripción: $3,200.00</li>
+                                        <li>Mensualidad: $2,700.00</li>
+                                        <li>Libros y Materiales:
+                                            <ul>
+                                                <li>K1: $2,420.00</li>
+                                                <li>K2 y K3: $2,880.00</li>
+                                            </ul>
+                                        </li>
+                                        <li>Eventos anuales: $500.00</li>
+                                        <li>Seguro escolar: $300.00</li>
+                                    </ul>
+                                <a href="../../niveles-educativos/preescolar/"
+                                    class="btn btn-outline-primary rounded-pill px-5 ">Conoce
+                                    mas...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
+                            <div class="card-body " >
+                                <h5 class="card-title">Primaria</h5>
+                                <hr width="30%" color="grey">
+                                <p>Nuestra meta es fomentar a nuestros niños los valores primordiales para la sana
+                                    convivencia entre sus compañeros y familia.</p>
+                                <ul style="text-align: start;">
+                                        <li>Inscripción: $3,300.00</li>
+                                        <li>Mensualidad: $2,700.00</li>
+                                        <li>Libros y Materiales:
+                                            <ul>
+                                                <li>P1 a P4: $3,729.00</li>
+                                                <li>P5 y P6: $3,856.00</li>
+                                            </ul>
+                                        </li>
+                                        <li>Regletas y geoplanos: $365.00</li>
+                                        <li>Eventos anuales: $500.00</li>
+                                        <li>Seguro escolar: $300.00</li>
+                                    </ul>
+                                <a href="./niveles-educativos/primaria/"
+                                    class="btn btn-outline-primary rounded-pill px-5 ">Conoce
+                                    mas...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
+                            <div class="card-body " >
+                                <h5 class="card-title">Secundaria</h5>
+                                <hr width="30%" color="grey">
+                                <p>Nuestro proposito es que cada miembro de nuestra comunidad escolar desarrolle su
+                                    liderazgo descubriendo su mayor potencial de aprendizaje.</p>
+                                    <ul style="text-align: start;">
+                                        <li>Inscripción: $3,300.00</li>
+                                        <li>Mensualidad: $2,700.00</li>
+                                        <li>Libros y Materiales:
+                                            <ul>
+                                                <li>S1 y S2: $3,729.00</li>
+                                                <li>S3: $3,856.00</li>
+                                            </ul>
+                                        </li>
+                                        <li>Regletas y geoplanos: $365.00</li>
+                                        <li>Eventos anuales: $500.00</li>
+                                        <li>Seguro escolar: $300.00</li>
+                                    </ul>
+                                <a href="./niveles-educativos/secundaria/"
+                                    class="btn btn-outline-primary rounded-pill px-5 ">Conoce
+                                    mas...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mt-3">
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+            </div>
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mt-3 mb-3">
+            <div class="col align-items-center text-center">
+                <a href="../../contacto/" class="btn btn-success text-white">Conocenos...</a>
+            </div>
+        </div>
+        <!--Contenido-->
+    </div>
+    <footer class="footer mt-auto py-3 container-fluid" style="background-color: #0E2344">
+        <div class="row">
+            <div class="col align-items-center m-3 ml-5 ml-sm-3">
+                <div class="d-flex align-items-start flex-column bd-highlight" style="color:#FFFFFF">
+                    <div class="p-0 bd-highlight">
+                        <span class="h5">Enlaces relacionados</span>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="http://www.gob.mx/sep" style="color:#FFFFFF" target="_blank"><i
+                                        style="font-size:16px" class="fa">&#xf0da;</i> SEP</a>
+                            </li>
+                            <li>
+                                <a href="http://portalsej.jalisco.gob.mx//" style="color:#FFFFFF" target="_blank"><i
+                                        style="font-size:16px" class="fa">&#xf0da;</i> Educación Jalisco</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
+                                        class="fa">&#xf0da;</i>
+                                    CIAIGapp</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ciaigandhi.com/" style="color:#FFFFFF" target="_blank"><i
+                                        style="font-size:16px" class="fa">&#xf0da;</i> CIAIG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-items-center">
+                <div class="d-flex align-items-center flex-column bd-highlight mb-3">
+                    <div class="mb-auto p-2 bd-highlight">
+                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img
+                                src="../../frontend/imgs/facebook.svg" width="32" /></a>
+                    </div>
+                    <div class="p-0 bd-highlight text-center">
+                        <a class="text-center" style="color: #FFFFFF"
+                            href="mailto:info@indiragandhi.edu.mx">info@indiragandhi.edu.mx</a>
+                    </div>
+                    <div class="p-0 bd-highlight text-center">
+                        <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto Vallarta</span>
+                    </div>
+                    <div class="p-0 bd-highlight text-center">
+                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
+                    </div>
+                    <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
+                        <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br> Río
+                        Guayaquil #505, Col. Lázaro Cárdenas | Puerto Vallarta, Jalisco | C.P. 48330<br>
+                        <a style="color: #FFFFFF"
+                            href="https://www.google.com/maps/dir//Colegio+Indira+Gandhi,+R%C3%ADo+Guayaquil,+L%C3%A1zaro+C%C3%A1rdenas,+Puerto+Vallarta,+Jalisco/@20.6233435,-105.2612991,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8421455deefb204b:0x45ad1e56f146c518!2m2!1d-105.2262794!2d20.623347"><i
+                                class="fa fa-location-arrow" style="color:#FFFFFF; font-size: 16px"></i> Como llegar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-items-center m-3">
+                <div class="d-flex align-items-center flex-column bd-highlight mb-3">
+                    <div class=" mb-auto p-0 text-center bd-highlight">
+                        <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu
+                            Dispositivo</span>
+                    </div>
+                    <div class="mb-auto p-0 bd-highlight">
+                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img
+                                src="../../frontend/imgs/app-store-icon.png" class="img-fluid" width="200" /></a>
+                    </div>
+                    <div class="mb-auto p-0 bd-highlight">
+                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img
+                                src="../../frontend/imgs/play-store-icon.png" class="img-fluid" width="200" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <font face="Arial" size="1" color="#FFFFFF">Sitio diseñado por Alan Sanchez</font>
+            </div>
+        </div>
+    </footer>
+    <div class="row m-0 p-0">
+        <div class="col m-0 p-0">
+            <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+        </div>
+        <div class="col m-0 p-0">
+            <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 </body>
 

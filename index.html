@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./introfade.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -19,33 +19,86 @@
             flex-direction: column;
             display: block;
         }
+
         @media(min-width:576px) {
             .dropdown-sm:hover>.dropdown-menu-sm {
                 flex-direction: row;
                 display: flex;
             }
         }
+
+        .parallax {
+            /* The image used */
+            background-image: url("./frontend/imgs/nivel_secundaria.jpg");
+
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img-01 {
+            position: absolute;
+            height: 100%;
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+
+        .img-02 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            background-position: 50% 33%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(15px);
+            filter: blur(15px);
+        }
+
+        a.btn-outline-primary {
+            color: #2B59B4;
+            border-color: #2B59B4;
+        }
+
+        a.btn-outline-primary:hover {
+            background-color: #2B59B4;
+            border-color: #2B59B4;
+        }
+
+        i.text-primary {
+            color: #2B59B4 !important;
+        }
     </style>
 </head>
 
-<body class="m-0 p-0" style="background-color: #e9ebee">
-    <header class="d-flex bd-highlight" style="background-color: #2B59B4">
+<body class="m-0 p-0" style="background-color: #dcdee0;">
+    <header class="d-flex bd-highlight p-0 m-0 px-5" style="background-color: #2B59B4">
         <div class="p-2 w-100 bd-highlight fadeintro">
             <a class="navbar-brand" href="./">
-                <img src="./frontend/imgs/logoTitle4.png" class="img-fluid" width="400" alt="Logotipo del colegio"
-                />
+                <img src="./frontend/imgs/logoTitle4.png" class="img-fluid" width="300" alt="Logotipo del colegio" />
             </a>
         </div>
         <div class="p-2 flex-shrink-1 bd-highlight align-self-center">
-            <a href="#" style="text-decoration: none; color: #FFFFFF; font-size: 14px; font-weight: bold;">
-                <img src="./frontend/imgs/us.png" width="16" alt="English version" title="English version" />
+            <a href="#">
+                <img src="./frontend/imgs/us.png" width="32" alt="English version" title="English version" />
             </a>
         </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFD417">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +107,8 @@
                     <a class="nav-link" href="./">INICIO</a>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         NOSOTROS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown1">
@@ -64,18 +118,19 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         NIVELES EDUCATIVOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="./niveles-educativos/prekinder/">PREKINDER</a>
                         <a class="dropdown-item" href="./niveles-educativos/preescolar/">PREESCOLAR</a>
                         <a class="dropdown-item" href="./niveles-educativos/primaria/">PRIMARIA</a>
                         <a class="dropdown-item" href="./niveles-educativos/secundaria/">SECUNDARIA</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         INTERESADOS <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="navbarDropdown3">
@@ -84,7 +139,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-sm">
-                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         GALERIA <span class="fa" style="font-size: 18px;">&#xf107;</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-sm dropdown-toggle" aria-labelledby="navbarDropdown4">
@@ -99,41 +155,184 @@
     </nav>
     <div class="container-fluid p-0 m-0">
         <!-- Return to Top -->
-        <a href="javascript:" id="return-to-top" href="#"><i class="icon-chevron-up"></i></a>
-        <!--CAROUSEL-->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
-                <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
-            </ol>
+        <a href="#" id="back-to-top" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+        <!--CAROUSEL xL-->
+        <div id="carouselxl" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div style="width: 100%; height: 350px; background-image: url(./frontend/imgs/slide_1.jpg); background-position: center center;background-size: cover;background-repeat: no-repeat;"></div>
+                <div class="carousel-item active" data-interval="5000">
+                    <div class="img-02 w-100 d-block" style="background-image: url('./frontend/imgs/slide_1.jpg')">
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-end">
+                            <img src="./frontend/imgs/slide_1.jpg" width="600" class="m-5" alt="..."
+                                style="position: relative;">
+                        </div>
+                        <div class="col py-5 px-5 align-items-center text-center">
+                            <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
+                            <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
+                            <cite class="mt-0 pt-0 text-white" data-id='1' style="font-family: Monotype Corsiva;">Un
+                                buen
+                                principio para un futuro brillante
+                            </cite>
+                            <br>
+                            <cite class="mt-0 pt-0 text-white">
+                                El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de
+                                transformación y
+                                calidad humana.
+                            </cite>
+                            <br><br>
+                            <a href="./contacto/" class="btn btn-outline-primary text-white rounded-0 px-5">Contacto</a>
+                            <a href="./galeria/nuestra-casa/"
+                                class="btn btn-outline-primary text-white rounded-0 px-5">Conocenos</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" style="width: 100%; height: 350px; background-image: url(./frontend/imgs/slide_2.jpg); background-position: center center;background-size: cover;background-repeat: no-repeat;">
-                    
+                <div class="carousel-item" data-interval="5000">
+                    <div class="img-02 w-100 d-block" style="background-image: url('./frontend/imgs/slide_2.jpg')">
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-end">
+                            <img src="./frontend/imgs/slide_2.jpg" width="600" class="m-5" alt="..."
+                                style="position: relative;">
+                        </div>
+                        <div class="col py-5 px-5 align-items-center text-center">
+                            <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
+                            <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
+                            <cite class="mt-0 pt-0 text-white" data-id='1' style="font-family: Monotype Corsiva;">Un
+                                buen
+                                principio para un futuro brillante
+                            </cite>
+                            <br>
+                            <cite class="mt-0 pt-0 text-white">
+                                El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de
+                                transformación y
+                                calidad humana.
+                            </cite>
+                            <br><br>
+                            <a href="./contacto/" class="btn btn-outline-primary text-white rounded-0 px-5">Contacto</a>
+                            <a href="./galeria/nuestra-casa/"
+                                class="btn btn-outline-primary text-white rounded-0 px-5">Conocenos</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" style="width: 100%; height: 350px; background-image: url(./frontend/imgs/slide_3.jpg); background-position: center center;background-size: cover;background-repeat: no-repeat;">
-
+                <div class="carousel-item" data-interval="5000">
+                    <div class="img-02 w-100 d-block" style="background-image: url('./frontend/imgs/slide_3.jpg')">
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-end">
+                            <img src="./frontend/imgs/slide_3.jpg" width="600" class="m-5" alt="..."
+                                style="position: relative;">
+                        </div>
+                        <div class="col py-5 px-5 align-items-center text-center">
+                            <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
+                            <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
+                            <cite class="mt-0 pt-0 text-white" data-id='1' style="font-family: Monotype Corsiva;">Un
+                                buen
+                                principio para un futuro brillante
+                            </cite>
+                            <br>
+                            <cite class="mt-0 pt-0 text-white">
+                                El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de
+                                transformación y
+                                calidad humana.
+                            </cite>
+                            <br><br>
+                            <a href="./contacto/" class="btn btn-outline-primary text-white rounded-0 px-5">Contacto</a>
+                            <a href="./galeria/nuestra-casa/"
+                                class="btn btn-outline-primary text-white rounded-0 px-5">Conocenos</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row p-0 m-0">
+        <!--CAROUSEL sm-->
+        <div id="carouselsm" class="carousel slide carousel-fade d-block d-lg-none" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                    <img src="./frontend/imgs/slide_1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption align-items-center text-center d-none d-sm-block"
+                        style="background-color: #ffffff29;">
+                        <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
+                        <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
+                        <cite class="mt-0 pt-0 text-white" data-id='1' style="font-family: Monotype Corsiva;">Un
+                            buen
+                            principio para un futuro brillante
+                        </cite>
+                        <br>
+                        <cite class="mt-0 pt-0 text-white">
+                            El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de
+                            transformación y
+                            calidad humana.
+                        </cite>
+                        <br><br>
+                        <a href="./contacto/" class="btn btn-outline-primary text-white rounded-0 px-5">Contacto</a>
+                        <a href="./galeria/nuestra-casa/"
+                            class="btn btn-outline-primary text-white rounded-0 px-5">Conocenos</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./frontend/imgs/slide_2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption align-items-center text-center d-none d-sm-block"
+                        style="background-color: #ffffff29;">
+                        <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
+                        <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
+                        <cite class="mt-0 pt-0 text-white" data-id='1' style="font-family: Monotype Corsiva;">Un
+                            buen
+                            principio para un futuro brillante
+                        </cite>
+                        <br>
+                        <cite class="mt-0 pt-0 text-white">
+                            El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de
+                            transformación y
+                            calidad humana.
+                        </cite>
+                        <br><br>
+                        <a href="./contacto/" class="btn btn-outline-primary text-white rounded-0 px-5">Contacto</a>
+                        <a href="./galeria/nuestra-casa/"
+                            class="btn btn-outline-primary text-white rounded-0 px-5">Conocenos</a>
+                    </div>
+                </div>
+                <div class="carousel-item " data-interval="5000">
+                    <img src="./frontend/imgs/slide_3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption align-items-center text-center d-none d-sm-block"
+                        style="background-color: #ffffff29;">
+                        <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
+                        <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
+                        <cite class="mt-0 pt-0 text-white" data-id='1' style="font-family: Monotype Corsiva;">Un
+                            buen
+                            principio para un futuro brillante
+                        </cite>
+                        <br>
+                        <cite class="mt-0 pt-0 text-white">
+                            El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de
+                            transformación y
+                            calidad humana.
+                        </cite>
+                        <br><br>
+                        <a href="./contacto/" class="btn btn-outline-primary text-white rounded-0 px-5">Contacto</a>
+                        <a href="./galeria/nuestra-casa/"
+                            class="btn btn-outline-primary text-white rounded-0 px-5">Conocenos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0 d-block d-sm-none">
             <div class="col align-items-center text-center p-0 m-0">
                 <div class="m-0 p-0 pb-3 pt-3" data-sequence='500' style="background-color: #2B59B4">
                     <img src="./frontend/imgs/user.png" data-id='1' class="img-fluid" width="78px" />
-                    <h1 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h1>
-                    <cite class="mt-0 pt-0 text-white-50" data-id='1' style="font-family: Monotype Corsiva;">Un buen principio para un futuro brillante
+                    <h3 class="mb-0 pb-0 text-white" data-id='1'>Colegio Inidira Gandhi</h3>
+                    <cite class="mt-0 pt-0 text-white-50" data-id='1' style="font-family: Monotype Corsiva;">Un buen
+                        principio para un futuro brillante
                     </cite>
                     <br>
                     <cite class="mt-0 pt-0 text-white">
-                        El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de transformación y calidad humana.
+                        El colegio Indira Gandhi se formó en el año 2010 siendo hoy un proyecto de transformación y
+                        calidad humana.
                     </cite>
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0 px-4 pt-5 pb-5">
+        <div class="row m-0 p-0 pt-5 pb-5">
             <div class="col m-0 p-0">
                 <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
             </div>
@@ -141,20 +340,80 @@
                 <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
             </div>
         </div>
-        <div class="row row p-0 m-0">
-            <div class="col-12 col-sm-10 mx-auto px-4 px-sm-0  ">
-                <div class="text-justify">
-                    <p class="h5">
-                        El colegio Indira Gandhi es una institución educativa dedicada a ofrecer una educación de calidad con el fortalecimiento
-                        de la práctica de los valores, donde se aplica la regla de oro para lograr una sana convivencia entre
-                        los miembros de nuestra comunidad escolar, además ofrece una educación bilingüe con el manejo del
-                        idioma inglés tan necesario para integrarse a la sociedad del siglo XXI y el manejo adecuado de la
+        <div class="row p-0 m-0">
+            <div class="col-12 col-sm-10 mx-auto px-4 px-sm-5">
+                <div class="text-justify px-0 px-sm-5 mx-0 mx-sm-5">
+                    <p class="h4" style="font-weight: 500;">
+                        El colegio Indira Gandhi es una institución educativa dedicada a ofrecer una educación de
+                        calidad con el fortalecimiento
+                        de la práctica de los valores, donde se aplica la regla de oro para lograr una sana convivencia
+                        entre
+                        los miembros de nuestra comunidad escolar, además ofrece una educación bilingüe con el manejo
+                        del
+                        idioma inglés tan necesario para integrarse a la sociedad del siglo XXI y el manejo adecuado de
+                        la
                         tecnología, nuestro lema es: “Un buen principio para un futuro brillante”.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0 px-4 py-5">
+        <div class="row m-0 p-0 pt-5">
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+            </div>
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
+            </div>
+        </div>
+        <div class="p-0 m-0 w-100 parallax">
+            <div class="row m-0 p-0">
+                <div class="col-12 text-center">
+                    <p class="h3 text-white">Conoce más</p>
+                    <hr width="10%" color="white">
+                </div>
+            </div>
+            <div class="row p-0 m-0">
+                <div class="col-12 text-center mb-3 mb-sm-0">
+                    <i class="fa fa-star fa-5x text-primary"></i><br><br>
+                    <a href="./conocenos/modelo-educativo/"
+                        class="btn btn-outline-primary rounded-pill px-5 text-white">Nuestro
+                        modelo
+                        educativo</a>
+                </div>
+            </div>
+            <div class="row p-0 m-0 mt-sm-5 pt-sm-3">
+                <div class="col-sm-4 col-12 text-center mb-3 mb-sm-0">
+                    <i class="fa fa-star fa-5x text-primary"></i><br><br>
+                    <a href="./conocenos/modelo-educativo/"
+                        class="btn btn-outline-primary rounded-pill px-5 text-white">Misión</a>
+                </div>
+                <div class="col-sm-4 col-12 text-center mb-3 mb-sm-0">
+                    <i class="fa fa-star fa-5x text-warning"></i><br><br>
+                    <a href="./conocenos/modelo-educativo/"
+                        class="btn btn-outline-warning rounded-pill px-5 text-white">Visión</a>
+                </div>
+                <div class="col-sm-4 col-12 text-center mb-3 mb-sm-0">
+                    <i class="fa fa-star fa-5x text-primary"></i><br><br>
+                    <a href="./conocenos/modelo-educativo/"
+                        class="btn btn-outline-primary rounded-pill px-5 text-white">Valores</a>
+                </div>
+            </div>
+            <div class="row m-0 p-0 mt-sm-5 pt-sm-3">
+                <div class="col-12 col-sm-6 text-center mb-3 mb-sm-0">
+                    <i class="fa fa-star fa-5x text-warning"></i><br><br>
+                    <a href="./conocenos/nuestro-equipo/"
+                        class="btn btn-outline-warning rounded-pill px-5 text-white">Nuestro
+                        equipo</a>
+                </div>
+                <div class="col-12 col-sm-6 text-center mb-3 mb-sm-0">
+                    <i class="fa fa-star fa-5x text-warning"></i><br><br>
+                    <a href="./conocenos/modelo-educativo/"
+                        class="btn btn-outline-warning rounded-pill px-5 text-white">Quienes
+                        somos</a>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 mb-5">
             <div class="col m-0 p-0">
                 <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
             </div>
@@ -165,24 +424,17 @@
         <div class="row m-0 p-0">
             <div class="col align-items-center text-center p-0 m-0">
                 <h3 class="">Nuestros Niveles educativos</h3>
+                <hr width="20%" color="grey">
                 <div class="row row px-3 py-3 m-0">
                     <div class="col">
                         <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
-                            <img src="./frontend/imgs/nivel_prekinder.jpg" class="card-img-top" alt="...">
-                            <div class="card-body" style="background-color: #3A79F7;">
-                                <h5 class="card-title">Pre Kinder</h5>
-                                <a href="./niveles-educativos/prekinder/" class="btn btn-light">Ver
-                                    mas...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
-                            <img src="./frontend/imgs/nivel_preescolar.jpg" class="card-img-top" alt="...">
-                            <div class="card-body" style="background-color: #FFD417;">
+                            <img src="./frontend/imgs/nivel.png" class="card-img-top" alt="...">
+                            <div class="card-body text-white" style="background-color: #0E2344;">
                                 <h5 class="card-title">Preescolar</h5>
-                                <a href="./niveles-educativos/preescolar/" class="btn btn-light">Ver
+                                <p>El colegio Indira Gandhi en su nivel preescolar ofrece una atención individualizada
+                                    al ser grupos no mayor a 20 alumnos por salón de clases.</p>
+                                <a href="./niveles-educativos/preescolar/"
+                                    class="btn btn-outline-warning rounded-pill px-5 text-white">Conoce
                                     mas...
                                 </a>
                             </div>
@@ -190,10 +442,13 @@
                     </div>
                     <div class="col">
                         <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
-                            <img src="./frontend/imgs/nivel_primaria.jpg" class="card-img-top" alt="...">
-                            <div class="card-body" style="background-color: #3A79F7;">
+                            <img src="./frontend/imgs/nivel.png" class="card-img-top" alt="...">
+                            <div class="card-body text-white" style="background-color: #0E2344;">
                                 <h5 class="card-title">Primaria</h5>
-                                <a href="./niveles-educativos/primaria/" class="btn btn-light">Ver
+                                <p>Nuestra meta es fomentar a nuestros niños los valores primordiales para la sana
+                                    convivencia entre sus compañeros y familia.</p>
+                                <a href="./niveles-educativos/primaria/"
+                                    class="btn btn-outline-warning rounded-pill px-5 text-white">Conoce
                                     mas...
                                 </a>
                             </div>
@@ -201,10 +456,13 @@
                     </div>
                     <div class="col">
                         <div class="card mx-auto shadow p-0 mb-5 bg-white rounded" style="width: 18rem;">
-                            <img src="./frontend/imgs/nivel_secundaria.jpg" class="card-img" alt="...">
-                            <div class="card-body" style="background-color: #FFD417;">
+                            <img src="./frontend/imgs/nivel.png" class="card-img" alt="...">
+                            <div class="card-body text-white" style="background-color: #0E2344;">
                                 <h5 class="card-title">Secundaria</h5>
-                                <a href="./niveles-educativos/secundaria/" class="btn btn-light">Ver
+                                <p>Nuestro proposito es que cada miembro de nuestra comunidad escolar desarrolle su
+                                    liderazgo descubriendo su mayor potencial de aprendizaje.</p>
+                                <a href="./niveles-educativos/secundaria/"
+                                    class="btn btn-outline-warning rounded-pill px-5 text-white">Conoce
                                     mas...
                                 </a>
                             </div>
@@ -213,94 +471,127 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer mt-auto py-3 container-fluid" style="background-color: #0E2344">
-        <div class="row">
-            <div class="col align-items-center m-3 ml-5 ml-sm-3">
-                <div class="d-flex align-items-start flex-column bd-highlight" style="color:#FFFFFF">
-                    <div class="p-0 bd-highlight">
-                        <span class="h5">Enlaces relacionados</span>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="http://www.gob.mx/sep" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                        class="fa">&#xf0da;</i> SEP</a>
-                            </li>
-                            <li>
-                                <a href="http://portalsej.jalisco.gob.mx//" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                        class="fa">&#xf0da;</i> Educación Jalisco</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:#FFFFFF" target="_blank"><i style="font-size:16px" class="fa">&#xf0da;</i>
-                                    CIAIGapp</a>
-                            </li>
-                            <li>
-                                <a href="https://www.ciaigandhi.com/" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
-                                        class="fa">&#xf0da;</i> CIAIG</a>
-                            </li>
-                        </ul>
+        <footer class="footer mt-auto py-3 container-fluid" style="background-color: #0E2344">
+            <div class="row">
+                <div class="col align-items-center m-3 ml-5 ml-sm-3">
+                    <div class="d-flex align-items-start flex-column bd-highlight" style="color:#FFFFFF">
+                        <div class="p-0 bd-highlight">
+                            <span class="h5">Enlaces relacionados</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="http://www.gob.mx/sep" style="color:#FFFFFF" target="_blank"><i
+                                            style="font-size:16px" class="fa">&#xf0da;</i> SEP</a>
+                                </li>
+                                <li>
+                                    <a href="http://portalsej.jalisco.gob.mx//" style="color:#FFFFFF" target="_blank"><i
+                                            style="font-size:16px" class="fa">&#xf0da;</i> Educación Jalisco</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:#FFFFFF" target="_blank"><i style="font-size:16px"
+                                            class="fa">&#xf0da;</i>
+                                        CIAIGapp</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ciaigandhi.com/" style="color:#FFFFFF" target="_blank"><i
+                                            style="font-size:16px" class="fa">&#xf0da;</i> CIAIG</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col align-items-center">
+                    <div class="d-flex align-items-center flex-column bd-highlight mb-3">
+                        <div class="mb-auto p-2 bd-highlight">
+                            <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img
+                                    src="./frontend/imgs/facebook.svg" width="32" /></a>
+                        </div>
+                        <div class="p-0 bd-highlight text-center">
+                            <a class="text-center" style="color: #FFFFFF"
+                                href="mailto:info@indiragandhi.edu.mx">info@indiragandhi.edu.mx</a>
+                        </div>
+                        <div class="p-0 bd-highlight text-center">
+                            <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto
+                                Vallarta</span>
+                        </div>
+                        <div class="p-0 bd-highlight text-center">
+                            <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
+                        </div>
+                        <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
+                            <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br>
+                            Río
+                            Guayaquil #505, Col. Lázaro Cárdenas | Puerto Vallarta, Jalisco | C.P. 48330<br>
+                            <a style="color: #FFFFFF"
+                                href="https://www.google.com/maps/dir//Colegio+Indira+Gandhi,+R%C3%ADo+Guayaquil,+L%C3%A1zaro+C%C3%A1rdenas,+Puerto+Vallarta,+Jalisco/@20.6233435,-105.2612991,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8421455deefb204b:0x45ad1e56f146c518!2m2!1d-105.2262794!2d20.623347"><i
+                                    class="fa fa-location-arrow" style="color:#FFFFFF; font-size: 16px"></i> Como
+                                llegar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col align-items-center m-3">
+                    <div class="d-flex align-items-center flex-column bd-highlight mb-3">
+                        <div class=" mb-auto p-0 text-center bd-highlight">
+                            <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu
+                                Dispositivo</span>
+                        </div>
+                        <div class="mb-auto p-0 bd-highlight">
+                            <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img
+                                    src="./frontend/imgs/app-store-icon.png" class="img-fluid" width="200" /></a>
+                        </div>
+                        <div class="mb-auto p-0 bd-highlight">
+                            <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img
+                                    src="./frontend/imgs/play-store-icon.png" class="img-fluid" width="200" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col align-items-center">
-                <div class="d-flex align-items-center flex-column bd-highlight mb-3">
-                    <div class="mb-auto p-2 bd-highlight">
-                        <a href="https://www.facebook.com/ColegioIndira-Gandhi-117346585516820/"><img src="./frontend/imgs/facebook.svg"
-                                width="32" /></a>
-                    </div>
-                    <div class="p-0 bd-highlight text-center">
-                        <a class="text-center" style="color: #FFFFFF" href="mailto:info@indiragandhi.edu.mx">info@indiragandhi.edu.mx</a>
-                    </div>
-                    <div class="p-0 bd-highlight text-center">
-                        <span class="text-center" style="color: #FFFFFF">Colegio Indira Gandhi | Puerto Vallarta</span>
-                    </div>
-                    <div class="p-0 bd-highlight text-center">
-                        <span class="text-center" style="color: #FFFFFF">TEL. 322 222 3548 y 322 222 0196</span>
-                    </div>
-                    <div class=" p-0 bd-highlight text-center" style="width: 2erm; color: #FFFFFF;">
-                        <i class="fa fa-map-marker" style="color:#FFFFFF"></i> <span class="h6">Dirección</span><br> Río
-                        Guayaquil #505, Col. Lázaro Cárdenas | Puerto Vallarta, Jalisco | C.P. 48330<br>
-                        <a style="color: #FFFFFF" href="https://www.google.com/maps/dir//Colegio+Indira+Gandhi,+R%C3%ADo+Guayaquil,+L%C3%A1zaro+C%C3%A1rdenas,+Puerto+Vallarta,+Jalisco/@20.6233435,-105.2612991,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8421455deefb204b:0x45ad1e56f146c518!2m2!1d-105.2262794!2d20.623347"><i
-                                class="fa fa-location-arrow" style="color:#FFFFFF; font-size: 16px"></i> Como llegar</a>
-                    </div>
+            <div class="row">
+                <div class="col text-center">
+                    <font face="Arial" size="1" color="#FFFFFF">Sitio diseñado por Alan Sanchez</font>
                 </div>
             </div>
-            <div class="col align-items-center m-3">
-                <div class="d-flex align-items-center flex-column bd-highlight mb-3">
-                    <div class=" mb-auto p-0 text-center bd-highlight">
-                        <span style="color: #FFFFFF; font-size: 15pt; font-weight:600">Descarga CIAIGapp para tu Dispositivo</span>
-                    </div>
-                    <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://itunes.apple.com/mx/app/ciaigapp/id1358531130?mt=8"><img src="./frontend/imgs/app-store-icon.png"
-                                class="img-fluid" width="200" /></a>
-                    </div>
-                    <div class="mb-auto p-0 bd-highlight">
-                        <a href="https://play.google.com/store/apps/details?id=com.ciaigapp"><img src="./frontend/imgs/play-store-icon.png"
-                                class="img-fluid" width="200" /></a>
-                    </div>
-                </div>
+        </footer>
+        <div class="row m-0 p-0">
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
+            </div>
+            <div class="col m-0 p-0">
+                <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col text-center">
-                <font face="Arial" size="1" color="#FFFFFF">Sitio diseñado por Alan Sanchez</font>
-            </div>
-        </div>
-    </footer>
-    <div class="row m-0 p-0">
-        <div class="col m-0 p-0">
-            <div style=" width:100%; height: 5px; background-color: #2B59B4;"></div>
-        </div>
-        <div class="col m-0 p-0">
-            <div style=" width:100%; height: 5px; background-color: #FFD417;"></div>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <script src="scrollTop.js"></script>
-    <!--<script src="./js/css3-animated.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script>
+            var link = document.getElementById("back-to-top");
+            var amountScrolled = 250;
+
+            window.addEventListener('scroll', function (e) {
+                if (window.pageYOffset > amountScrolled) {
+                    link.classList.add('show');
+                } else {
+                    link.className = 'back-to-top';
+                }
+            });
+
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var distance = 0 - window.pageYOffset;
+                var increments = distance / (500 / 16);
+                function animateScroll() {
+                    window.scrollBy(0, increments);
+                    if (window.pageYOffset <= document.body.offsetTop) {
+                        clearInterval(runAnimation);
+                    }
+                };
+                // Loop the animation function
+                var runAnimation = setInterval(animateScroll, 16);
+            });
+        </script>
 </body>
 
 </html>
